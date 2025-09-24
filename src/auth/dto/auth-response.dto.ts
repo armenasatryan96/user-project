@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 /**
- * DTO для ответа аутентификации
+ * Authentication response DTO
  */
 export class AuthResponseDto {
   @ApiProperty({
@@ -11,7 +11,7 @@ export class AuthResponseDto {
   access_token!: string;
 
   @ApiProperty({
-    description: 'Информация о пользователе',
+    description: 'User information',
     type: 'object',
     properties: {
       id: { type: 'string', example: 'uuid' },
